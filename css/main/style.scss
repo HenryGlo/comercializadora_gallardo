@@ -16,6 +16,10 @@ body {
   background-color: $color-primary;
 }
 
+a {
+  text-decoration: none;
+}
+
 .page-block-button {
   background: $color-primary;
   color:#fff;
@@ -92,6 +96,10 @@ header {
 
 
 .banner-section {
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #fff;
+  }
   .swiper-slide {
     min-height: 70vh;
     background: #232323;
@@ -351,5 +359,125 @@ header {
     font-weight: 500;
     text-align: center;
   }
+  .contact-information {
+    margin-top: 100px;
+    .banner-title {
+      color: #232323;
+      text-align: left;
+      font-size: 30px;
+      font-weight: 700;
+    }
+    .contact-form {
+      textarea,
+      input {
+        margin-top: 10px;
+        background: transparent;
+        border: 1px solid #919191;
+        border-radius: 0;
+      }
+      label {
+        color: #919191;
+        font-weight: 600;
+      }
+    }
+    .contact-item {
+      margin-top: 50px;
+      .icon {
+        color: $color-primary;
+        font-size: 50px;
+      }
+      .information {
+        margin-left: 5%;
+        .title {
+          color: #232323;
+          font-size: 30px;
+          font-weight: 800;
+        }
+        .subtitle {
+          color: #232323;
+          font-size: 20px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
 
+
+@media only screen and (max-width: 1000px) {
+  .contact-us {
+    .contact-information {
+      .banner-title {
+        text-align: center;
+        font-size: 25px;
+      }
+      .contact-item {
+        .information {
+          .title {
+            font-size: 20px;
+          }
+          .subtitle {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background: #232323;
+  padding: 50px 0;
+  color: #fff;
+  .footer-title {
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 1px solid $color-primary;
+    margin-bottom: 50px;
+  }
+
+  .footer-logo {
+    width: 90%;
+  }
+
+  .footer-description {
+    font-size: 18px;
+    font-weight: 400;
+    color: #C7C7C7;
+  }
+
+  .social-circle-item {
+    margin: 0 20px;
+    text-decoration: none;
+    background: #4B4B4B;
+    font-size: 20px;
+    color: #C7C7C7;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .link-list {
+    list-style: none;
+    li {
+      margin: 20px 0;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+}
+
+.copyright {
+  padding: 20px 5%;
+  background: $color-primary;
+  color: white;
+  text-align: center;
+  a {
+    color: #fff;
+    font-weight: 800;
+  }
 }
