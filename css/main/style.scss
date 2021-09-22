@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,700;1,100;1,800&display=swap');
+
+$color-primary: #05848C;
+$color-secondary: #009BAD;
+$color-primary-light: #79BED6;
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.page-color-primary {
+  color: $color-primary;
+}
+
+.page-bg-primary {
+  background-color: $color-primary;
+}
+
+.page-block-button {
+  background: $color-primary;
+  color:#fff;
+  font-weight: 800;
+  border: 0;
+  padding: 5px 0;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background: $color-secondary;
+    color: #fff;
+  }
+}
+
+header {
+  .header-info-item {
+    .social-icon {
+      font-size: 20px;
+      margin: 0 2%;
+    }
+    svg {
+      margin-right: 5%;
+      width: 35px;
+    }
+    p {
+      font-weight: 800;
+    }
+  }
+
+  .page-navbar {
+    margin-top: 20px;
+    padding: 25px 0 !important;
+    .navbar-brand {
+      img {
+        width: 100%;
+      }
+    }
+    .nav-item {
+      display: flex;
+      align-items: center;
+      a {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 14px;
+        font-weight: 800;
+        color: #232323;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .page-navbar {
+    .navbar-brand {
+      img {
+        width: 100% !important;
+      }
+    }
+    .navbar-collapse {
+      margin-top: 30px;
+      .nav-item {
+        a {
+          padding-top: 5px !important;
+          padding-bottom: 5px !important;
+        }
+      }
+    }
+  }
+}
+
+
+.banner-section {
+  .swiper-slide {
+    min-height: 70vh;
+    background: #232323;
+    color: #fff;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    .banner-information {
+      margin-left: 15%;
+      .banner-subtitle {
+        font-size: 25px;
+        font-weight: 400;
+      }
+      .banner-title {
+        font-size: 40px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .banner-section {
+    .swiper-slide {
+      .banner-information {
+        margin: 0;
+        text-align: center;
+        padding: 0 5%;
+        .banner-title {
+          font-size: 30px;
+        }
+        button {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.contact-us-block {
+  background: #05848c; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #05848c 50%, #232323 50%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #05848c 50%,#232323 50%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #05848c 50%,#232323 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05848c', endColorstr='#232323',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  padding: 10px 0;
+  .fas {
+    margin-right: 5%;
+  }
+  .information {
+    .title {
+      font-weight: 800;
+      font-size: 30px;
+    }
+    .subtitle {
+      font-weight: 400;
+      font-size: 25px;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact-us-block {
+    background: $color-primary !important;
+    .fas {
+      margin:0;
+      display: none;
+    }
+    .information {
+      text-align: center;
+      .title {
+        font-size: 20px;
+      }
+      .subtitle {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.about-us-section {
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(0deg, rgba(255,255,255,0.9192051820728291) 13%, rgba(208,208,208,1) 91%);
+  background: -webkit-linear-gradient(0deg, rgba(255,255,255,0.9192051820728291) 13%, rgba(208,208,208,1) 91%);
+  background: linear-gradient(0deg, rgba(255,255,255,0.9192051820728291) 13%, rgba(208,208,208,1) 91%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#d0d0d0",GradientType=1);
+  height: 100vh;
+  padding: 120px 0;
+
+  .banner-title {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .about-us-content {
+    .title {
+      font-weight: 600;
+      font-size: 25px;
+    }
+    .description {
+      font-weight: 400;
+      font-size: 18px;
+    }
+    .about-us-image {
+      margin-top: 20px;
+      width: 100%;
+      height: 300px;
+      border: 5px solid $color-primary;
+    }
+  }
+
+  .information-item {
+    margin-top: 60px;
+    .icon-circle {
+      background: $color-primary;
+      width: 100px;
+      height: 100px;
+      .fas {
+        font-size: 30px;
+      }
+    }
+    .information {
+      p {
+        margin: 0;
+      }
+      .title {
+        font-size: 30px;
+        font-weight: 800;
+      }
+      .description {
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .about-us-section  {
+    .banner-title {
+      font-size: 30px;
+    }
+  }
+}
