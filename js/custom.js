@@ -63,3 +63,7 @@ $("#mygallery").justifiedGallery({
   border: 30
 });
 
+
+$(window).on("load",function(){
+  $("#preloader").fadeOut("fast");
+});
